@@ -15,12 +15,17 @@ const VideoList = ({videos, videoChosen}) => {
                 videos.map((video, index) => (
                   <div key={index}
                     onClick={() => videoChosen(video)}>
+                     
+                     
+                     <div className="lists">
                         <img className="videos" style={{objectFit: "fill"}}
                            src={video.snippet.thumbnails.high.url}
-                           alt = {video.snippet.title}
-                        />
-                         <h4>{video.snippet.title}</h4>
-                        <p style={{margin:'0',fontSize:'14px'}}>{video.snippet.channelTitle}</p>
+                           alt = {video.snippet.title}/>
+                           <div>
+                           <p className="pr" style={{margin:'0',fontSize:'12px'}}>{video.snippet.channelTitle}</p>
+                         <p>{video.snippet.title}</p>
+                         </div>
+                         </div>
                   </div>
                 ))
                 
