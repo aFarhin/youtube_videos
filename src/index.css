@@ -17,7 +17,7 @@ img {
   width: 200px;
   height: 150px;
   border-radius: 0%;
-  border: .5px solid rgb(51, 51, 51);
+  border: .5px solid rgb(155, 152, 152);
   margin-bottom: 20px;
   cursor: pointer;
   transition: all ease .2s;
@@ -57,7 +57,7 @@ p {
   color: rgb(194, 188, 188);
 }
 .vid{
-  border: .5px solid rgb(51, 51, 51);
+  border: .2px solid rgb(87, 84, 84);
 }
 .title{
   color: white;
@@ -99,10 +99,12 @@ b {
   display: flex;
   gap: 5px;
   align-items: flex-start;
+
 }
 
 .video-list-content-img {
   width: 200px;
+  min-width: auto;
 }
 
 .search-bar {
@@ -132,7 +134,7 @@ b {
 }
 
 .icon {
-  font-size: 20px;
+  font-size: 1.3rem;
   color: white;
 
 }
@@ -146,6 +148,55 @@ b {
 }
 
 .youtube-icon {
-  font-size: 30px;
+  font-size: 1.3rem;
   color: #ff0000;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .video {
+    width: 90%;
+    margin-left: 20px;
+    /* margin-right: 20px; */
+  }
+
+  .video-list {
+    width: 95%;
+    margin-top: 20px;
+  }
+
+  .search-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px;
+    width: 90%;
+    min-width: auto;
+  }
+
+  .search-bar {
+    min-width: auto;
+    width: 80%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    height: 35px;
+  }
+
+  .search-button {
+    min-width: auto;
+    width: 20%;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .prolog{
+    width: 1rem;
+    min-width: auto;
+  }
 }

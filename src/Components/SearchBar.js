@@ -55,7 +55,7 @@ const SearchBar = ({addVideos}) => {
               <button className="search-button" onClick={getYoutubeVideos}><FaSistrix className="icon"/></button>
             </div>
 
-            <div><img  src="https://www.smallrevolution.com/wp-content/uploads/2020/12/small-revolution-remote-jobs-web-developer-370x305.jpg"></img></div>
+            <div className="prolog"><img  src="https://www.smallrevolution.com/wp-content/uploads/2020/12/small-revolution-remote-jobs-web-developer-370x305.jpg"></img></div>
 
         </div>
 
